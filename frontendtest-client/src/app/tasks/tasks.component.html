@@ -1,0 +1,39 @@
+  
+<div class="marginRight text-center">
+    <img src="/./././assets/Logo/ico-logo.png" class="backgraunHeader">
+    <h1 class="colorText">FrontEnd Test</h1>
+</div>
+
+<form class="form" (submit)="add(taskTitle.value); taskTitle.value=''">
+    <table>
+        <thead>
+            <tr><input #taskTitle placeholder="Agregar una nueva tarea" /></tr>
+            <tr><input type="submit" value="Agregar" class="btn btn-success btn-lg btn-block" /></tr>
+</thead>
+</table>
+</form>
+<section class="container flex">
+<table class="table tablep">
+    <thead>
+    <tr style="width: 90%;">
+        <th scope="col" class="expanderTh">
+            ToDo list Iron Bit
+        </th>
+        <th scope="col" >
+            <img src="/./././assets/Buttons/recycle-bin.svg" class="displayim">
+        </th>
+    </tr>
+    </thead>
+    <tr *ngFor="let task of tasks">
+        <td class="text-left ">
+            <a (click)="edit(task)">
+                <span *ngIf="task!==editTask">{{task.title}}</span>
+                <input *ngIf="task===editTask" [(ngModel)]="task.title" (blur)="update()" (keyup.enter)="update()">
+            </a>
+        </td>
+        <td class="text-right">
+            <button id="sincolor" class="buttonF" title="delete task" (click)="delete(task)"><img src="/./././assets/Buttons/remove.svg" width="100%" height="100%"></button>
+        </td>
+    </tr>
+</table>
+</section>

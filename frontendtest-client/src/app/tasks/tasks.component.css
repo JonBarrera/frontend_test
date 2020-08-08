@@ -1,0 +1,56 @@
+.backgraunHeader {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.marginRight {
+    margin-right: auto;
+    align-items: center;
+}
+h1 {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+
+.displayim{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: 50%;
+}
+.expanderTh{
+    width: 90%;
+    margin-left: 50%;
+}
+.contraerTh{
+    width: 20%;
+}
+
+.btntamaño{
+    width: 50px;
+    height: 50px;
+}
+#sincolor{
+    background-color: transparent;
+    border: 0;
+}
+
+.tamañoTabla{
+    width: 50%;
+    width: auto;
+}
+input::placeholder {
+    background-color: transparent;
+    font-size: 1.2em;
+    font-style: italic;
+    width: 100%;
+  }
+
+  .tablep{
+  }
